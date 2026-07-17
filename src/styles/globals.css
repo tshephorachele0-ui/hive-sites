@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0e27;
+  color: #ffffff;
+}
+
+/* Gold accent color for highlights */
+.text-gold {
+  color: #FFC107;
+}
+
+.bg-gold {
+  background-color: #FFC107;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.hover-gold:hover {
+  color: #FFC107;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-8 py-3 bg-gold text-dark font-semibold rounded-lg hover:bg-yellow-400 transition-all cursor-pointer;
+}
+
+.btn-secondary {
+  @apply px-8 py-3 border-2 border-gold text-gold hover:bg-gold hover:text-dark transition-all cursor-pointer rounded-lg;
+}
+
+/* Section padding */
+.section {
+  @apply py-16 px-4 md:px-8;
+}
+
+/* Container */
+.container {
+  @apply max-w-7xl mx-auto;
+}
